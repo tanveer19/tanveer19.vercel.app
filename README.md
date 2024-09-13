@@ -1,5 +1,7 @@
+Hi,
+
+I am Tanveer.
+
 My portfolio site:
 
-https://tanveer.xyz/
-
-For previous work, watch for "Portfolio" section
+https://tanveer19.vercel.app

@@ -15,14 +15,26 @@ const breakpointColumnsObj = {
 
 const tabList = [
   "All",
+  "HTML",
   "JavaScript",
   "React",
   "Node.js",
   "MongoDB",
-  "WordPress",
+  // "WordPress",
 ];
 
 const portfolioItems = [
+  {
+    img: "/img/portfolio/m-portfolio-0.jpg",
+    width: 400,
+    height: 400,
+    title: "Natural Travel",
+    subTitle: "Your Travel Provider",
+    alterText: "Natural Travel",
+    delayAnimation: "200",
+    portfolioLink: "https://h01-natural-travel.vercel.app/",
+    category: ["HTML"],
+  },
   {
     img: "/img/portfolio/m-portfolio-1.jpg",
     width: 400,
@@ -62,28 +74,28 @@ const portfolioItems = [
     githubServerLink: "https://github.com/tanveer19/A10-cafe-onion-server",
     category: ["JavaScript", "React", "Node.js"],
   },
-  {
-    img: "/img/portfolio/pge.jpg",
-    width: 400,
-    height: 400,
-    title: "Pacific Green Energy",
-    subTitle: "Your Solar Provider",
-    alterText: "Pacific Green Energy",
-    delayAnimation: "200",
-    portfolioLink: "https://pacificgreenenergy.com.au",
-    category: ["WordPress"],
-  },
-  {
-    img: "/img/portfolio/kbgau.jpg",
-    width: 400,
-    height: 400,
-    title: "KBG Australia",
-    subTitle: "Your Provider",
-    alterText: "KBG Australia",
-    delayAnimation: "200",
-    portfolioLink: "https://kbgbd.com.au",
-    category: ["WordPress"],
-  },
+  // {
+  //   img: "/img/portfolio/pge.jpg",
+  //   width: 400,
+  //   height: 400,
+  //   title: "Pacific Green Energy",
+  //   subTitle: "Your Solar Provider",
+  //   alterText: "Pacific Green Energy",
+  //   delayAnimation: "200",
+  //   portfolioLink: "https://pacificgreenenergy.com.au",
+  //   category: ["WordPress"],
+  // },
+  // {
+  //   img: "/img/portfolio/kbgau.jpg",
+  //   width: 400,
+  //   height: 400,
+  //   title: "KBG Australia",
+  //   subTitle: "Your Provider",
+  //   alterText: "KBG Australia",
+  //   delayAnimation: "200",
+  //   portfolioLink: "https://kbgbd.com.au",
+  //   category: ["WordPress"],
+  // },
 ];
 
 const PortfolioTabPanel = ({ items }) => (
