@@ -56,10 +56,6 @@ const About = () => {
                         </li>
 
                         <li>
-                          <label>Age: </label>
-                          <span>37 years</span>
-                        </li>
-                        <li>
                           <label>Address: </label>
                           <span>Dhaka</span>
                         </li>
@@ -77,10 +73,6 @@ const About = () => {
                         <li>
                           <label>Telegram: </label>
                           <span>@Thjbd19</span>
-                        </li>
-                        <li>
-                          <label>Freelance: </label>
-                          <span>Available</span>
                         </li>
                       </ul>
                     </div>

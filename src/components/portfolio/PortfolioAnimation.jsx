@@ -181,7 +181,7 @@ const PortfolioAnimation = () => {
   return (
     <div className="portfolio-filter-01">
       <Tabs>
-        <TabList className="filter flex justify-center">
+        <TabList className="filter flex justify-center flex-wrap">
           {tabList.map((val, i) => (
             <Tab key={i}>{val}</Tab>
           ))}
