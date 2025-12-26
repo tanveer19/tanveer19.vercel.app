@@ -231,10 +231,10 @@
     right: 20px;
     opacity: 0;
     visibility: hidden;
+    @include transition(ease all 0.35s);
     @media screen and (max-width: 991px) {
       padding: 0;
     }
-    @include transition(ease all 0.35s);
     h5 {
       margin: 0 0 4px;
       color: $px-white;

@@ -20,10 +20,10 @@
       transition: 0.5s ease-in-out;
     }
     &:hover {
+      border-color: #f7f7f7;
       h5 {
         color: #212529;
       }
-      border-color: #f7f7f7;
       .icon {
         img {
           background: #f7f7f7;

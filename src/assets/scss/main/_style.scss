@@ -67,8 +67,6 @@
   background-repeat: repeat-x;
   background-size: auto 6px;
   background-position: center;
-  .theme-light & {
-  }
   @include down-md {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -76,6 +74,8 @@
   @include down-sm {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .theme-light & {
   }
 }
 
@@ -370,11 +370,11 @@
       position: relative;
       margin: 0 5px;
       @include transition(ease all 0.35s);
+      @include scale(1);
       .theme-light & {
         background: $px-dark;
         color: $px-white;
       }
-      @include scale(1);
       i {
         line-height: inherit;
       }

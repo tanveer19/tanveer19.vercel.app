@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Scrollspy from "react-scrollspy";
+import React, { useState, useRef } from "react";
+import { Scrollspy } from "@makotot/ghostui";
 import { Link } from "react-router-dom";
-import ReactTooltip from "react-tooltip";
+import { Tooltip } from "react-tooltip";
 import {
   FiUser,
   FiBriefcase,
@@ -19,6 +19,24 @@ const Header = () => {
       setClick(false);
     }
   };
+
+  // Create refs for each section
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const resumeRef = useRef(null);
+  const workRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const sectionRefs = [homeRef, aboutRef, resumeRef, workRef, contactRef];
+
+  // Attach refs to sections on mount
+  React.useEffect(() => {
+    homeRef.current = document.getElementById("home");
+    aboutRef.current = document.getElementById("about");
+    resumeRef.current = document.getElementById("resume");
+    workRef.current = document.getElementById("work");
+    contactRef.current = document.getElementById("contactus");
+  }, []);
 
   return (
     <>
@@ -44,127 +62,89 @@ const Header = () => {
           </div>
           {/* End htl-top */}
 
-          <Scrollspy
-            // className="nav nav-menu"
-            className="flex flex-wrap nav-menu w-1/2 mx-auto"
-            items={["home", "about", "resume", "work", "blog", "contactus"]}
-            currentClassName="active"
-            offset={-30}
-          >
-            <li>
-              <a
-                className="nav-link block"
-                href="#home"
-                data-tip
-                data-for="HOME"
-                onClick={handleClick}
-              >
-                <FaHome />
-                <ReactTooltip
-                  id="HOME"
-                  place="right"
-                  type="dark"
-                  effect="float"
-                >
-                  <span>Home</span>
-                </ReactTooltip>
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link block"
-                href="#about"
-                data-tip
-                data-for="ABOUT"
-                onClick={handleClick}
-              >
-                <FiUser />
-                <ReactTooltip
-                  id="ABOUT"
-                  place="right"
-                  type="dark"
-                  effect="float"
-                >
-                  <span>About</span>
-                </ReactTooltip>
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link block"
-                href="#resume"
-                data-tip
-                data-for="RESUME"
-                onClick={handleClick}
-              >
-                <FiFileText />
-                <ReactTooltip
-                  id="RESUME"
-                  place="right"
-                  type="dark"
-                  effect="float"
-                >
-                  <span>Resume</span>
-                </ReactTooltip>
-              </a>
-            </li>
-            <li>
-              <a
-                className="nav-link block"
-                href="#work"
-                data-tip
-                data-for="WORK"
-                onClick={handleClick}
-              >
-                <FiBriefcase />
-                <ReactTooltip
-                  id="WORK"
-                  place="right"
-                  type="dark"
-                  effect="float"
-                >
-                  <span>Work</span>
-                </ReactTooltip>
-              </a>
-            </li>
-            {/* <li>
-              <a
-                className="nav-link block"
-                href="#blog"
-                data-tip
-                data-for="BLOG"
-                onClick={handleClick}
-              >
-                <FaBlog />
-                <ReactTooltip
-                  id="BLOG"
-                  place="right"
-                  type="dark"
-                  effect="float"
-                >
-                  <span>Blog</span>
-                </ReactTooltip>
-              </a>
-            </li> */}
-            <li>
-              <a
-                className="nav-link block"
-                href="#contactus"
-                data-tip
-                data-for="CONTACT"
-                onClick={handleClick}
-              >
-                <FiPhoneOutgoing />
-                <ReactTooltip
-                  id="CONTACT"
-                  place="right"
-                  type="dark"
-                  effect="float"
-                >
-                  <span>Contact</span>
-                </ReactTooltip>
-              </a>
-            </li>
+          <Scrollspy sectionRefs={sectionRefs} offset={-30}>
+            {({ currentElementIndexInViewport }) => (
+              <ul className="flex flex-wrap nav-menu w-1/2 mx-auto">
+                <li>
+                  <a
+                    className={`nav-link block ${currentElementIndexInViewport === 0 ? "active" : ""}`}
+                    href="#home"
+                    data-tooltip-id="HOME"
+                    onClick={handleClick}
+                  >
+                    <FaHome />
+                  </a>
+                  <Tooltip id="HOME" place="right">
+                    <span>Home</span>
+                  </Tooltip>
+                </li>
+                <li>
+                  <a
+                    className={`nav-link block ${currentElementIndexInViewport === 1 ? "active" : ""}`}
+                    href="#about"
+                    data-tooltip-id="ABOUT"
+                    onClick={handleClick}
+                  >
+                    <FiUser />
+                  </a>
+                  <Tooltip id="ABOUT" place="right">
+                    <span>About</span>
+                  </Tooltip>
+                </li>
+                <li>
+                  <a
+                    className={`nav-link block ${currentElementIndexInViewport === 2 ? "active" : ""}`}
+                    href="#resume"
+                    data-tooltip-id="RESUME"
+                    onClick={handleClick}
+                  >
+                    <FiFileText />
+                  </a>
+                  <Tooltip id="RESUME" place="right">
+                    <span>Resume</span>
+                  </Tooltip>
+                </li>
+                <li>
+                  <a
+                    className={`nav-link block ${currentElementIndexInViewport === 3 ? "active" : ""}`}
+                    href="#work"
+                    data-tooltip-id="WORK"
+                    onClick={handleClick}
+                  >
+                    <FiBriefcase />
+                  </a>
+                  <Tooltip id="WORK" place="right">
+                    <span>Work</span>
+                  </Tooltip>
+                </li>
+                {/* <li>
+                  <a
+                    className={`nav-link block ${currentElementIndexInViewport === 4 ? "active" : ""}`}
+                    href="#blog"
+                    data-tooltip-id="BLOG"
+                    onClick={handleClick}
+                  >
+                    <FaBlog />
+                  </a>
+                  <Tooltip id="BLOG" place="right">
+                    <span>Blog</span>
+                  </Tooltip>
+                </li> */}
+                <li>
+                  <a
+                    className={`nav-link block ${currentElementIndexInViewport === 4 ? "active" : ""}`}
+                    href="#contactus"
+                    data-tooltip-id="CONTACT"
+                    onClick={handleClick}
+                  >
+                    <FiPhoneOutgoing />
+                  </a>
+                  <Tooltip id="CONTACT" place="right">
+                    <span>Contact</span>
+                  </Tooltip>
+                </li>
+              </ul>
+            )}
           </Scrollspy>
         </div>
       </header>
