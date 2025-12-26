@@ -24,7 +24,7 @@ const Slider = () => {
               <div className="type-box">
                 <h6>Hello, My name is</h6>
                 <h1 className="font-alt">{sliderContent.name}</h1>
-                <p className="loop-text lead">Front-End Developer</p>
+                <p className="loop-text lead">Full Stack Developer</p>
                 <p className="desc">{sliderContent.description}</p>
                 <div className="mt-4">
                   <a

@@ -3,8 +3,8 @@ import React from "react";
 const ServiceContent = [
   {
     icon: "icon-mobile",
-    title: "PSD/Figma to HTML",
-    descriptions: `Your relaible partner to convert PSD to HTML using cutting edge technologies`,
+    title: "PSD/Figma to Next.js",
+    descriptions: `Your relaible partner to convert PSD to Next.js using cutting edge technologies`,
     delayAnimation: "",
   },
   {

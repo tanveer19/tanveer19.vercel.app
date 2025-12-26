@@ -1,4 +1,3 @@
-import React from "react";
 import Social from "../Social";
 import Skill from "../Skill/Skill";
 import Service from "../service/ServiceAnimation";
@@ -13,14 +12,14 @@ const About = () => {
               <div className="about-me">
                 <div className="img">
                   <div className="img-in flex">
-                    <img src="/img/about/about-me-3.jpg" alt="about" />
+                    <img src="/img/about/about-me-2.jpg" alt="about" />
                   </div>
                   <Social />
                   {/* End social icon */}
                 </div>
                 {/* End img */}
                 <div className="info">
-                  <p>Front-end Developer</p>
+                  <p>Full Stack Developer</p>
                   <h3>Tanveer Hossain Jony</h3>
                 </div>
                 {/* End info */}
@@ -41,9 +40,11 @@ const About = () => {
                 </div>
                 <div className="about-text">
                   <p>
-                    Hands-on experience in JavaScript, React, MongoDB and
-                    Firebase Database. I have worked using Route 53, EC2,
-                    Lightsail of AWS to manage WordPress websites.
+                    Hands-on experience in Next.js, React, JavaScript,
+                    PostgreSQL, MongoDB and Firebase Database.
+                    {/* I have also
+                    worked using Route 53, EC2, Lightsail of AWS to manage
+                    WordPress websites. */}
                   </p>
                 </div>
                 <div className="info-list">
@@ -66,7 +67,7 @@ const About = () => {
                         <li>
                           <label>Phone: </label>
                           <span>
-                            <a href="tel:+8801600312882">Call Me</a>
+                            <a href="tel:+8801600312882">Click to Call Me</a>
                           </span>
                         </li>
 
