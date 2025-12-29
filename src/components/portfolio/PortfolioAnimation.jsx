@@ -15,15 +15,29 @@ const breakpointColumnsObj = {
 
 const tabList = [
   "All",
-  "HTML",
+  "Next.js",
   "JavaScript",
   "React",
   "Node.js",
   "MongoDB",
   "WordPress",
+  "HTML",
 ];
 
 const portfolioItems = [
+  {
+    img: "/img/portfolio/m-portfolio-travel-buddy.jpg",
+    width: 400,
+    height: 400,
+    title: "Travel Buddy",
+    subTitle: "Travel",
+    alterText: "Travel Buddy",
+    delayAnimation: "200",
+    portfolioLink: "https://l2-b5-assignment-8.vercel.app/",
+    githubClientLink: "https://github.com/tanveer19/L2-B5-Assignment-8",
+    githubServerLink: "https://github.com/tanveer19/L2-B5-Assignment-8-Back",
+    category: ["Next.js"],
+  },
   {
     img: "/img/portfolio/m-portfolio-0.jpg",
     width: 400,
