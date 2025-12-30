@@ -21,7 +21,7 @@ const tabList = [
   "Node.js",
   "MongoDB",
   "WordPress",
-  "HTML",
+  // "HTML",
 ];
 
 const portfolioItems = [
@@ -38,17 +38,17 @@ const portfolioItems = [
     githubServerLink: "https://github.com/tanveer19/L2-B5-Assignment-8-Back",
     category: ["Next.js"],
   },
-  {
-    img: "/img/portfolio/m-portfolio-0.jpg",
-    width: 400,
-    height: 400,
-    title: "Natural Travel",
-    subTitle: "Your Travel Provider",
-    alterText: "Natural Travel",
-    delayAnimation: "200",
-    portfolioLink: "https://h01-natural-travel.vercel.app/",
-    category: ["HTML"],
-  },
+  // {
+  //   img: "/img/portfolio/m-portfolio-0.jpg",
+  //   width: 400,
+  //   height: 400,
+  //   title: "Natural Travel",
+  //   subTitle: "Your Travel Provider",
+  //   alterText: "Natural Travel",
+  //   delayAnimation: "200",
+  //   portfolioLink: "https://h01-natural-travel.vercel.app/",
+  //   category: ["HTML"],
+  // },
   {
     img: "/img/portfolio/m-portfolio-1.jpg",
     width: 400,
