@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // const conctInfo = {
 //   phone: "+04 6545-9535-6515",
@@ -27,13 +28,13 @@ const Slider = () => {
                 <p className="loop-text lead">Full Stack Developer</p>
                 <p className="desc">{sliderContent.description}</p>
                 <div className="mt-4">
-                  <a
+                  <Link
                     className="px-btn px-btn-white"
-                    href="https://drive.google.com/file/d/18j0ZeQD7jsAoKZCoy4n_acflZcFoHyFA/view?usp=drive_link"
+                    to="https://drive.google.com/file/d/11HfdazHVrJObHYIuFE3wD2eaIiReT2UM/view?usp=sharing"
                     target="_blank"
                   >
                     {sliderContent.btnText}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
