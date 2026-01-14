@@ -7,6 +7,7 @@ import Resume from "../resume/ResumeAnimation";
 import Portfolio from "../portfolio/Portfolio";
 import ContactUs from "../Contact/ContactUs";
 import ScrollToTop from "../ScrollToTop";
+import WhatIDo from "../WhatIDo/WhatIDo";
 
 const Layout = () => {
   return (
@@ -16,6 +17,7 @@ const Layout = () => {
       <About></About>
       <Resume></Resume>
       <Portfolio></Portfolio>
+      {/* <WhatIDo></WhatIDo> */}
       <ContactUs></ContactUs>
       <ScrollToTop></ScrollToTop>
       <Footer></Footer>
