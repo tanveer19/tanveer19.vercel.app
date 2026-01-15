@@ -17,7 +17,7 @@ const Layout = () => {
       <About></About>
       <Resume></Resume>
       <Portfolio></Portfolio>
-      {/* <WhatIDo></WhatIDo> */}
+      <WhatIDo></WhatIDo>
       <ContactUs></ContactUs>
       <ScrollToTop></ScrollToTop>
       <Footer></Footer>

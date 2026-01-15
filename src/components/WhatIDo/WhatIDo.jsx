@@ -2,7 +2,7 @@ import Service from "../service/ServiceAnimation";
 
 const WhatIDo = () => {
   return (
-    <div className="">
+    <div className="max-w-[1120px] w-full mx-auto">
       <div className="ml-5">
         <div className="title">
           <h3>What I do?</h3>

@@ -93,23 +93,23 @@ const About = () => {
           ></div>
           {/* End separated */}
 
-          <div className="ml-5">
+          {/* <div className="ml-5">
             <div className="title">
               <h3>What I do?</h3>
             </div>
 
             <Service></Service>
-          </div>
+          </div> */}
 
           {/* End .row */}
 
           {/* separated */}
-          <div
+          {/* <div
             className="separated"
             style={{
               backgroundImage: `url("img/border-dark.png")`,
             }}
-          ></div>
+          ></div> */}
           {/* End separated */}
 
           <div className="ml-5">

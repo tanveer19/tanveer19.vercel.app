@@ -1,5 +1,3 @@
-import React from "react";
-
 const ServiceContent = [
   {
     icon: "icon-mobile",
