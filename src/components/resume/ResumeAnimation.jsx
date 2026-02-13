@@ -49,7 +49,7 @@ const Resume = () => {
       <section id="resume" className="section">
         <div className="container max-w-[1120px] w-full mx-auto ">
           <div className="title ml-5">
-            <h3>Experience.</h3>
+            <h3>Experience</h3>
           </div>
           {/* End title */}
           <div className="resume-box">

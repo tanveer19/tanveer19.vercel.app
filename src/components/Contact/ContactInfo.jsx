@@ -1,11 +1,9 @@
-import React from "react";
-
 const ContactInfo = () => {
   return (
     <>
       <div className="contact-info mx-2">
         <h4>What’s your story? Get in touch</h4>
-        <p>
+        <p className="my-3">
           Always available for freelancing if the right project comes along,
           Feel free to contact me.
         </p>

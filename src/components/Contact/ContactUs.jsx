@@ -1,4 +1,3 @@
-import React from "react";
 import Contact from "./Contact";
 import Map from "./Map";
 import ContactInfo from "./ContactInfo";
