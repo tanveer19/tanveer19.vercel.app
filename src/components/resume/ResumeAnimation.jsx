@@ -3,6 +3,19 @@ import React from "react";
 
 const resumeContent = [
   {
+    jobPosition: `Senior Developer`,
+    jobType: `Alphabyte Technologies | Onsite`,
+    jobDuration: `Feb, 2026 – Present`,
+    timeDuraton: `Full Time`,
+    compnayName: "Alphabyte Technologies",
+    jobDescription: [
+      "❖ Leading development of scalable web applications using modern tech stack.",
+      "❖ Architecting and implementing full-stack solutions with React, Node.js, and cloud services.",
+      "❖ Mentoring junior developers and conducting code reviews to maintain high code quality.",
+    ],
+    delayAnimation: "",
+  },
+  {
     jobPosition: `Intern – MERN Stack Developer`,
     jobType: `The Bengal Studio | Remote`,
     jobDuration: `Oct, 2023 – Dec, 2023`,
@@ -13,7 +26,7 @@ const resumeContent = [
       "    ❖ Transformed static HTML components into dynamic React components .",
       "    ❖ Implemented a secure Sign-In page by integrating Firebase SMS authentication.",
     ],
-    delayAnimation: "",
+    delayAnimation: "100",
   },
   {
     jobPosition: `Executive – Web Maintenance`,
@@ -26,7 +39,7 @@ const resumeContent = [
       "❖ Oversaw the maintenance of 5 WordPress websites, implementing updates, troubleshooting issues.",
       "❖ Effectively supervised and coordinated a team of 3 individuals, ensuring optimal workflow.",
     ],
-    delayAnimation: "100",
+    delayAnimation: "200",
   },
 ];
 
