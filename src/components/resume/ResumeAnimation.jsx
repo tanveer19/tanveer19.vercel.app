@@ -4,13 +4,13 @@ import React from "react";
 const resumeContent = [
   {
     jobPosition: `Senior Developer`,
-    jobType: `Alphabyte Technologies | Onsite`,
+    jobType: `Alphabyte Technology Ltd | Onsite`,
     jobDuration: `Feb, 2026 – Present`,
     timeDuraton: `Full Time`,
-    compnayName: "Alphabyte Technologies",
+    compnayName: "Alphabyte Technology Ltd",
     jobDescription: [
       "❖ Leading development of scalable web applications using modern tech stack.",
-      "❖ Architecting and implementing full-stack solutions with React, Node.js, and cloud services.",
+      "❖ Architecting and implementing full-stack solutions with php, React, Node.js, and cloud services.",
       "❖ Mentoring junior developers and conducting code reviews to maintain high code quality.",
     ],
     delayAnimation: "",
